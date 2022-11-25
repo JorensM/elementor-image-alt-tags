@@ -2,6 +2,10 @@
 
     /**
      * Plugin Name: Elementor Image Alt-tags
+     * Description: Add "alt-tag" property to Elementor Image widget
+     * Version: 1.0
+     * Plugin URI: https://github.com/JorensM/elementor-image-alt-tags
+     * License: MIT
      */
 
 
@@ -48,6 +52,9 @@ function j_add_image_widget_settings($element, $section_id, $args){
 			[
 				'type' => \Elementor\Controls_Manager::TEXTAREA,
 				'label' => esc_html__( 'Alt tag', 'j_widgets' ),
+                'dynamic' => [
+                    'active' => true,
+                ],
 			]
 		);
     }
