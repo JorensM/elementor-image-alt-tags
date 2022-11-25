@@ -1,11 +1,11 @@
 <?php
 
     /**
-     * Plugin Name: Elementor Image Alt-tags
+     * Plugin Name: Image Alt-tags for Elementor
      * Description: Add "alt-tag" property to Elementor Image widget
      * Version: 1.0
      * Plugin URI: https://github.com/JorensM/elementor-image-alt-tags
-     * License: MIT
+     * License: GPLv2
      */
 
 
