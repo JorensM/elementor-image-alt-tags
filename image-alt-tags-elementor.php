@@ -15,11 +15,18 @@ function j_change_image_widget_content($widget_content, $widget){
         $j_settings = $widget->get_settings();
         $alt_tag = null;
 
-        if(!empty($j_settings["image_alt_tag"])){
+        if(isset($j_settings["image_alt_tag"]) && !empty($j_settings["image_alt_tag"])){
             $alt_tag = $j_settings["image_alt_tag"];
         }else{
+            //return "Alt tag1: " . $alt_tag;
             return $widget_content;
         }
+
+        //echo "Alt tag: " + $alt_tag;
+        //return "Alt tag: " . $alt_tag;
+        //echo "<pre>";
+        //echo htmlspecialchars($widget_content);
+        //echo "</pre>";
 
         $doc = new DOMDocument();
         @$doc->loadHTML($widget_content);
