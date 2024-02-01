@@ -57,8 +57,9 @@ function j_add_image_widget_settings($element, $section_id, $args){
         $element->add_control(
 			'image_alt_tag',
 			[
-				'type' => \Elementor\Controls_Manager::TEXTAREA,
+				'type' => \Elementor\Controls_Manager::TEXT,
 				'label' => esc_html__( 'Alt tag', 'j_widgets' ),
+                'label_block' => true,
                 'dynamic' => [
                     'active' => true,
                 ],
